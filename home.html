@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Online Learning Portal for Tutorials</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      #bgImage {
+        background-image: url("Images/backgroundImage.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh; /* Full viewport height */
+        color: rgb(4, 0, 0); /* Text color for better readability */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0.5;
+      }
+      #hero {
+        background-color: black;
+      }
+      #bgImageText {
+        font-weight: 700;
+        font-size: 4rem;
+        color: rgb(55, 52, 52);
+      }
+
+      #extraInfo {
+        height: 500px;
+      }
+
+      #coursesSection {
+        background-color: #0b1f28;
+        align-items: center;
+        padding: 4rem;
+      }
+
+      #coursesSection img {
+        width: 265px;
+      }
+
+      footer {
+        background: linear-gradient(#333b3e, #0b1f28);
+        color: white;
+      }
+
+      #contUs1:hover {
+        color: orange;
+      }
+      #contUs2:hover {
+        color: orange;
+      }
+      #followUs i:hover {
+        color: orange;
+      }
+      footer .card {
+        background-color: transparent;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav
+      class="navbar navbar-expand-lg bg-dark border-bottom sticky-top"
+      data-bs-theme="dark"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold mx-4" href="home.html">LearnKit</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                style="color: rgb(145, 219, 239)"
+                aria-current="page"
+                href="home.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tutorialPage.html">Tutorial Page</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contactUs.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="signIn.html">Sign In</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="enroll.html">Course Details </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="enrollForm.html">Enroll</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- bg image -->
+    <div id="hero">
+      <div id="bgImage">
+        <h1 id="bgImageText">World’s Popular E-Learning Platform.</h1>
+      </div>
+    </div>
+    <!-- bg image end -->
+
+    <div
+      id="otherInfo"
+      class="d-flex align-items-center justify-content-center bg-warning row"
+    >
+      <div class="col-3 col-md-4 col-sm-12 text-center p-4">
+        <img src="Images/black-icon-1.png" alt="" />
+        <h2>Update Your Latest Skills</h2>
+        <p>
+          The passage experienced a surge in pop clarity during the 1960s when
+          Letraset used it on their dry-transfer sheets.
+        </p>
+      </div>
+      <div class="col-3 col-md-4 col-sm-12 text-center p-4">
+        <img src="Images/black-icon-2.png" alt="" />
+        <h2>Earn a Certificate or Degree</h2>
+        <p>
+          Decieve hope disgust ultimate law. Justice convictions abstract hatred
+          ultimate mountains hope depths truth.
+        </p>
+      </div>
+      <div class="col-3 col-md-4 col-sm-12 text-center p-4">
+        <img src="Images/black-icon-3.png" alt="" />
+        <h2>Upskill Your Organisation</h2>
+        <p>
+          Decieve hope disgust ultimate law. Justice convictions abstract hatred
+          ultimate mountains hope depths truth.
+        </p>
+      </div>
+    </div>
+
+    <!-- extra info -->
+    <div
+      id="extraInfo"
+      class="d-flex align-items-center justify-content-left row"
+    >
+      <div class="w-50 p-4 col-3 col-md-4 col-sm-12 mx-4">
+        <h2>Celebrating our E-Learning Excellence & Experience</h2>
+        <p class="w-75 p-2">
+          The passage experienced a surge in pop clarity during the 1960s when
+          Letraset used it on their dry-transfer sheets during the 90s as
+          desktop publishers bundled the text with their software today it’s
+          seen all around the web on templates.
+        </p>
+      </div>
+      <div class="col-3 col-md-4 col-sm-12 d-flex">
+        <img
+          id="orangeIcon"
+          src="Images/orange-icon-1.png"
+          alt=""
+          class="px-5"
+        />
+        <div>
+          <h1>52,693 +</h1>
+          <p>Live Course Creators</p>
+        </div>
+      </div>
+    </div>
+    <!-- extra info end -->
+
+    <!-- courses section -->
+    <div
+      id="coursesSection"
+      class="row d-flex text-center align-items-center justify-content-center"
+    >
+      <h1 class="text-white">Popular Courses</h1>
+      <!-- 1 -->
+      <div class="card m-1" style="width: 18rem">
+        <img
+          src="Images/coursesImg/course-image-1.jpg"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title text-warning">Development</h5>
+          <p class="card-text">Java Tutorial for Complete Beginners</p>
+          <a href="tutorialPage.html" class="btn btn-primary">Watch demo</a>
+        </div>
+      </div>
+      <!-- 2 -->
+      <div class="card m-1" style="width: 18rem">
+        <img
+          src="Images/coursesImg/course-image-2.jpg"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title text-warning">Design</h5>
+          <p class="card-text">
+            Tutorials for Beginners Arts Designing Materials
+          </p>
+          <a href="tutorialPage.html" class="btn btn-primary">Watch demo</a>
+        </div>
+      </div>
+      <!-- 3 -->
+      <div class="card m-1" style="width: 18rem">
+        <img
+          src="Images/coursesImg/course-image-3.jpg"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title text-warning">Development</h5>
+          <p class="card-text">Advanced Python Techniques Tutorial</p>
+          <a href="tutorialPage.html" class="btn btn-primary">Watch demo</a>
+        </div>
+      </div>
+      <!-- 4 -->
+      <div class="card m-1" style="width: 18rem">
+        <img
+          src="Images/coursesImg/course-image-4.jpg"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title text-warning">Technology</h5>
+          <p class="card-text">Pearl Techniques Tutorials for Beginners</p>
+          <a href="tutorialPage.html" class="btn btn-primary">Watch demo</a>
+        </div>
+      </div>
+      <!-- 5 -->
+      <div class="card m-1" style="width: 18rem">
+        <img
+          src="Images/coursesImg/course-image-4.jpg"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title text-warning">Development</h5>
+          <p class="card-text">Introduction to quantum mechanics Tutorials</p>
+          <a href="tutorialPage.html" class="btn btn-primary">Watch demo</a>
+        </div>
+      </div>
+      <!-- 6 -->
+      <div class="card m-1" style="width: 18rem">
+        <img
+          src="Images/coursesImg/course-image-3.jpg"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title text-warning">Designing</h5>
+          <p class="card-text">Basic & Advance CSS3 animations Tutorials</p>
+          <a href="tutorialPage.html" class="btn btn-primary">Watch demo</a>
+        </div>
+      </div>
+      <!-- 7 -->
+      <div class="card m-1" style="width: 18rem">
+        <img
+          src="Images/coursesImg/course-image-2.jpg"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title text-warning">Development</h5>
+          <p class="card-text">Basic Hosting Techniques for Beginners</p>
+          <a href="tutorialPage.html" class="btn btn-primary">Watch demo</a>
+        </div>
+      </div>
+      <!-- 8 -->
+      <div class="card m-1" style="width: 18rem">
+        <img
+          src="Images/coursesImg/course-image-1.jpg"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title text-warning">Development</h5>
+          <p class="card-text">Basic Hosting Techniques for Beginners</p>
+          <a href="tutorialPage.html" class="btn btn-primary">Watch demo</a>
+        </div>
+      </div>
+    </div>
+    <!-- courses section end -->
+    <br />
+    <!-- footer -->
+    <footer
+      class="pt-5 pb-4 row d-flex text-center align-items-center justify-content-center"
+    >
+      <div class="card" style="width: 18rem">
+        <div class="card-body">
+          <h1 class="card-title">LearnKit</h1>
+          <p class="card-text">
+            The passage experienced a surge in pop clarity during the 1960s when
+            Letraset used it on their the 90s as desktop publishers.
+          </p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <div class="card-body">
+          <h4 class="card-title">Contact Us</h4>
+          <p class="card-text">
+            <span id="contUs1">Support Ticket</span>
+            <br />
+            <span id="contUs2">Live Chat</span>
+          </p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <div class="card-body">
+          <h4>Branch Address</h4>
+          <p class="card-text">2569 , 1st Ave, Land Street, Washington DC.</p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <div class="card-body">
+          <h4>Follow Us On</h4>
+          <p id="followUs" class="card-text">
+            <i class="fa-brands fa-facebook mx-2"></i
+            ><i class="fa-brands fa-twitter mx-2"></i>
+            <i class="fa-brands fa-instagram mx-2"></i
+            ><i class="fa-brands fa-behance mx-2"></i>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- footer end -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

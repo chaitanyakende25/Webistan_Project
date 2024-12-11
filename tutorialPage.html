@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Tutorial Page</title>
+    <style>
+      /*  hero section*/
+      #bgImage {
+        background-image: url("Images/tutorialsImg/bgImage.webp");
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh; /* Full viewport height */
+        color: rgb(4, 0, 0);
+        /* Text color for better readability */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0.5;
+      }
+      #hero {
+        background-color: black;
+      }
+      #bgImageText {
+        font-weight: 700;
+        font-size: 4rem;
+        color: rgb(121, 152, 175);
+      }
+      /*hero section end*/
+      footer {
+        background: linear-gradient(#333b3e, #0b1f28);
+        color: white;
+      }
+
+      #contUs1:hover {
+        color: orange;
+      }
+      #contUs2:hover {
+        color: orange;
+      }
+      #followUs i:hover {
+        color: orange;
+      }
+      footer .card {
+        background-color: transparent;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- nav start -->
+    <nav
+      class="navbar navbar-expand-lg bg-dark border-bottom sticky-top"
+      data-bs-theme="dark"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold mx-4" href="home.html">LearnKit</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="home.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                style="color: rgb(145, 219, 239)"
+                href="tutorialPage.html"
+                >Tutorial Page</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contactUs.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="signIn.html">Sign In</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="enroll.html">Course Details </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="enrollForm.html">Enroll</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- nav end -->
+
+    <!-- bg image -->
+    <div id="hero">
+      <div id="bgImage">
+        <h1 id="bgImageText">Watch our Tutorials</h1>
+      </div>
+    </div>
+    <!-- bg image end -->
+
+    <!-- tutorials -->
+
+    <div
+      id="coursesSection"
+      class="row d-flex text-center align-items-center justify-content-center"
+    >
+      <h1 class="text-dark font-weight-bold m-2">Popular Courses</h1>
+      <!-- filter option -->
+      <div class="text-center m-4">
+        <button class="btn btn-info" onclick="filterCourses('all')">All</button>
+        <button class="btn btn-info" onclick="filterCourses('development')">
+          Development
+        </button>
+        <button class="btn btn-info" onclick="filterCourses('designing')">
+          Designing
+        </button>
+        <button class="btn btn-info" onclick="filterCourses('technology')">
+          Technology
+        </button>
+      </div>
+
+      <!-- filter option end -->
+      <!-- 1 -->
+      <div class="card m-1" style="width: 20rem" data-type="development">
+        <iframe
+          class="card-img-top"
+          src="https://www.youtube.com/embed/eIrMbAQSU34?si=t6OW807zwg_SNAvR"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <div class="card-body">
+          <h5 class="card-title text-warning">Development</h5>
+          <p class="card-text">Best Java Tutorial for Complete Beginners</p>
+          <h4>Price: &#8377;499</h4>
+          <div class="d-flex justify-content-between">
+            <a href="#" class="btn btn-primary">Watch Demo</a>
+            <a href="/enrollForm.html" class="btn btn-primary">Register Now</a>
+          </div>
+        </div>
+      </div>
+      <!-- 2 -->
+      <div class="card m-1" style="width: 20rem" data-type="designing">
+        <iframe
+          class="card-img-top"
+          src="https://www.youtube.com/embed/IEUBq_AikAo?si=sU1kVd6-3s394Xxo&amp"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <div class="card-body">
+          <h5 class="card-title text-warning">Design</h5>
+          <p class="card-text">
+            Tutorials for Beginners Arts Designing Materials
+          </p>
+          <h4>Price: &#8377;399</h4>
+          <div class="d-flex justify-content-between">
+            <a href="#" class="btn btn-primary">Watch Demo</a>
+            <a href="/enrollForm.html" class="btn btn-primary">Register Now</a>
+          </div>
+        </div>
+      </div>
+      <!-- 3 -->
+      <div class="card m-1" style="width: 20rem" data-type="development">
+        <iframe
+          class="card-img-top"
+          src="https://www.youtube.com/embed/KSiRzuSx120?si=t_8O3PvaI5N6r6xU"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <div class="card-body">
+          <h5 class="card-title text-warning">Development</h5>
+          <p class="card-text">Advanced Python Techniques Tutorial</p>
+          <h4>Price: &#8377;299</h4>
+          <div class="d-flex justify-content-between">
+            <a href="#" class="btn btn-primary">Watch Demo</a>
+            <a href="/enrollForm.html" class="btn btn-primary">Register Now</a>
+          </div>
+        </div>
+      </div>
+      <!-- 4 -->
+      <div class="card m-1" style="width: 20rem" data-type="technology">
+        <iframe
+          class="card-img-top"
+          src="https://www.youtube.com/embed/WEghIXs8F6c?si=_3ir9GzgYs5Oteye"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <div class="card-body">
+          <h5 class="card-title text-warning">Technology</h5>
+          <p class="card-text">Pearl Techniques Tutorials for Beginners</p>
+          <h4>Price: &#8377;599</h4>
+          <div class="d-flex justify-content-between">
+            <a href="#" class="btn btn-primary">Watch Demo</a>
+            <a href="/enrollForm.html" class="btn btn-primary">Register Now</a>
+          </div>
+        </div>
+      </div>
+      <!-- 5 -->
+      <div class="card m-1" style="width: 20rem" data-type="development">
+        <iframe
+          class="card-img-top"
+          src="https://www.youtube.com/embed/hyctIDPRSqY?si=rRLXemcBatLOmAN7"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <div class="card-body">
+          <h5 class="card-title text-warning">Development</h5>
+          <p class="card-text">Introduction to quantum mechanics Tutorials</p>
+          <h4>Price: &#8377;299</h4>
+          <div class="d-flex justify-content-between">
+            <a href="#" class="btn btn-primary">Watch Demo</a>
+            <a href="/enrollForm.html" class="btn btn-primary">Register Now</a>
+          </div>
+        </div>
+      </div>
+      <!-- 6 -->
+      <div class="card m-1" style="width: 20rem" data-type="designing">
+        <iframe
+          class="card-img-top"
+          src="https://www.youtube.com/embed/z2LQYsZhsFw?si=6mOyRP80-G7MUC0m"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <div class="card-body">
+          <h5 class="card-title text-warning">Designing</h5>
+          <p class="card-text">Basic & Advance CSS3 animations Tutorials</p>
+          <h4>Price: &#8377;499</h4>
+          <div class="d-flex justify-content-between">
+            <a href="#" class="btn btn-primary">Watch Demo</a>
+            <a href="/enrollForm.html" class="btn btn-primary">Register Now</a>
+          </div>
+        </div>
+      </div>
+      <!-- 7 -->
+      <div class="card m-1" style="width: 20rem" data-type="development">
+        <iframe
+          class="card-img-top"
+          src="https://www.youtube.com/embed/mQ2JH9hM_C4?si=iDUlQvAdOaYxo6I2"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <div class="card-body">
+          <h5 class="card-title text-warning">Development</h5>
+          <p class="card-text">Basic Hosting Techniques for Beginners</p>
+          <h4>Price: &#8377;299</h4>
+          <div class="d-flex justify-content-between">
+            <a href="#" class="btn btn-primary">Watch Demo</a>
+            <a href="/enrollForm.html" class="btn btn-primary">Register Now</a>
+          </div>
+        </div>
+      </div>
+      <!-- 8 -->
+      <div class="card m-1" style="width: 20rem" data-type="development">
+        <iframe
+          class="card-img-top"
+          src="https://www.youtube.com/embed/WXsD0ZgxjRw?si=wjJzgrZHVjHgr5V0"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <div class="card-body">
+          <h5 class="card-title text-warning">Development</h5>
+          <p class="card-text">Basic API Techniques for Beginners Tutorials</p>
+          <h4>Price: &#8377;499</h4>
+          <div class="d-flex justify-content-between">
+            <a href="#" class="btn btn-primary">Watch Demo</a>
+            <a href="/enrollForm.html" class="btn btn-primary">Register Now</a>
+          </div>
+        </div>
+      </div>
+      <!-- 9 -->
+      <div class="card m-1" style="width: 20rem" data-type="development">
+        <iframe
+          class="card-img-top"
+          src="https://www.youtube.com/embed/2n5EBLBHx-A?si=7YL1eob230MuC775"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <div class="card-body">
+          <h5 class="card-title text-warning">Development</h5>
+          <p class="card-text">Master jQuery in a Short Period of Time</p>
+          <h4>Price: &#8377;599</h4>
+          <div class="d-flex justify-content-between">
+            <a href="#" class="btn btn-primary">Watch Demo</a>
+            <a href="/enrollForm.html" class="btn btn-primary">Register Now</a>
+          </div>
+        </div>
+      </div>
+      <!-- 10 -->
+      <div class="card m-1" style="width: 20rem" data-type="development">
+        <iframe
+          class="card-img-top"
+          src="https://www.youtube.com/embed/1h46cNkyXlE?si=4HceVx6dlh-D3LU1"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <div class="card-body">
+          <h5 class="card-title text-warning">Development</h5>
+          <p class="card-text">Core Javascript tutorials for Beginners</p>
+          <h4>Price: &#8377;199</h4>
+          <div class="d-flex justify-content-between">
+            <a href="#" class="btn btn-primary">Watch Demo</a>
+            <a href="/enrollForm.html" class="btn btn-primary">Register Now</a>
+          </div>
+        </div>
+      </div>
+      <!-- 11 -->
+      <div class="card m-1" style="width: 20rem" data-type="development">
+        <iframe
+          class="card-img-top"
+          src="https://www.youtube.com/embed/BUCiSSyIGGU?si=lofJ9Cc73HiIDftu"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <div class="card-body">
+          <h5 class="card-title text-warning">Development</h5>
+          <p class="card-text">Advanced PHP Techniques for Student</p>
+          <h4>Price: &#8377;799</h4>
+          <div class="d-flex justify-content-between">
+            <a href="#" class="btn btn-primary">Watch Demo</a>
+            <a href="/enrollForm.html" class="btn btn-primary">Register Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- tutorials end -->
+
+    <!-- footer -->
+    <footer
+      class="pt-5 pb-4 row d-flex text-center align-items-center justify-content-center"
+    >
+      <div class="card" style="width: 18rem">
+        <div class="card-body">
+          <h1 class="card-title">LearnKit</h1>
+          <p class="card-text">
+            The passage experienced a surge in pop clarity during the 1960s when
+            Letraset used it on their the 90s as desktop publishers.
+          </p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <div class="card-body">
+          <h4 class="card-title">Contact Us</h4>
+          <p class="card-text">
+            <span id="contUs1">Support Ticket</span>
+            <br />
+            <span id="contUs2">Live Chat</span>
+          </p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <div class="card-body">
+          <h4>Branch Address</h4>
+          <p class="card-text">2569 , 1st Ave, Land Street, Washington DC.</p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <div class="card-body">
+          <h4>Follow Us On</h4>
+          <p id="followUs" class="card-text">
+            <i class="fa-brands fa-facebook mx-2"></i
+            ><i class="fa-brands fa-twitter mx-2"></i>
+            <i class="fa-brands fa-instagram mx-2"></i
+            ><i class="fa-brands fa-behance mx-2"></i>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- footer end -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
